@@ -34,9 +34,7 @@ with pkgs; [
   # docker
   # docker-compose
   #
-  awscli2
   flyctl
-  ngrok
   tflint
 
   # Media-related packages

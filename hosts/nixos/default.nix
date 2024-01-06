@@ -26,7 +26,7 @@ let user = "alarawms";
   };
 
   # Set your time zone.
-  time.timeZone = "America/New_York";
+  time.timeZone = "Asia/Riyadh";
 
   # The global useDHCP flag is deprecated, therefore explicitly set to false here.
   # Per-interface useDHCP will be mandatory in the future, so this generated config
@@ -65,15 +65,15 @@ let user = "alarawms";
       # Uncomment these for AMD or Nvidia GPU
       # boot.initrd.kernelModules = [ "amdgpu" ];
       # services.xserver.videoDrivers = [ "amdgpu" ];
-      # services.xserver.videoDrivers = [ "nvidia" ];
+       services.xserver.videoDrivers = [ "nvidia" ];
 
       # Comment this for AMD GPU
       # This helps fix tearing of windows for Nvidia cards
-      # services.xserver.screenSection = ''
-      #   Option       "metamodes" "nvidia-auto-select +0+0 {ForceFullCompositionPipeline=On}"
-      #   Option       "AllowIndirectGLXProtocol" "off"
-      #   Option       "TripleBuffer" "on"
-      # '';
+       services.xserver.screenSection = ''
+         Option       "metamodes" "nvidia-auto-select +0+0 {ForceFullCompositionPipeline=On}"
+         Option       "AllowIndirectGLXProtocol" "off"
+         Option       "TripleBuffer" "on"
+       '';
 
       # LightDM Display Manager
       displayManager.defaultSession = "none+bspwm";
@@ -89,7 +89,7 @@ let user = "alarawms";
       };
 
       # Turn Caps Lock into Ctrl
-      layout = "us";
+      layout = "us,ara";
       xkbOptions = "ctrl:nocaps";
 
       # Better support for general peripherals
@@ -203,7 +203,7 @@ let user = "alarawms";
           tooltip = { fade = true; shadow = false; opacity = 0.75; focus = true; full-shadow = false; };
           dock = { shadow = false; };
           dnd = { shadow = false; };
-          popup_menu = { opacity = 1.0; };
+          popup_menu = { opacity = 0.0; };
           dropdown_menu = { opacity = 1.0; };
         };
       };

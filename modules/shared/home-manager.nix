@@ -67,8 +67,8 @@ let name = "Mohammed";
   git = {
     enable = true;
     ignores = [ "*.swp" ];
-    userName = name;
-    userEmail = email;
+    userName = alarawms;
+    userEmail = m@malarawi.sa;
     lfs = {
       enable = true;
     };

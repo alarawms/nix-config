@@ -34,10 +34,6 @@ in
     # $ nix shell nixpkgs#mas
     # $ mas search <app name>
     #
-    masApps = {
-      "1password" = 1333542190;
-      "wireguard" = 1451685025;
-    };
   };
 
   # Enable home-manager
