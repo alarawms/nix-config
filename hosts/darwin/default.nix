@@ -7,6 +7,8 @@ let user = "alarawms"; in
   imports = [
     ../../modules/darwin/secrets.nix
     ../../modules/darwin/home-manager.nix
+    ../../modules/darwin/yabai.nix
+    ../../modules/darwin/skhd.nix
     ../../modules/shared
     ../../modules/shared/cachix
      agenix.darwinModules.default
@@ -99,4 +101,5 @@ let user = "alarawms"; in
       remapCapsLockToControl = true;
     };
   };
+}
 }
